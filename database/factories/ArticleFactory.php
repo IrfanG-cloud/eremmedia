@@ -16,7 +16,9 @@ class ArticleFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence(),
-            'description' => $this->faker->paragraph()
+            'description' => $this->faker->paragraph(),
+            'image' => "https://media.istockphoto.com/photos/taking-notes-on-a-ring-binded-notepad-inf-picture-id1315904960",
+            'keywords' => "sport, entertainment, politics"
         ];
     }
 

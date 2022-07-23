@@ -23,3 +23,17 @@ Route::get('articles/{id}', [App\Http\Controllers\ArticleController::class, 'sho
 Route::post('articles', [App\Http\Controllers\ArticleController::class, 'store']);
 Route::put('articles/{id}', [App\Http\Controllers\ArticleController::class, 'update']);
 Route::delete('articles/{id}', [App\Http\Controllers\ArticleController::class, 'delete']);
+
+
+Route::get('users', [App\Http\Controllers\UserController::class, 'index']);
+Route::get('users/{id}', [App\Http\Controllers\UserController::class, 'show']);
+Route::post('users', [App\Http\Controllers\UserController::class, 'store']);
+Route::put('users/{id}', [App\Http\Controllers\UserController::class, 'update']);
+Route::delete('users/{id}', [App\Http\Controllers\UserController::class, 'delete']);
+
+
+Route::get('categories', [App\Http\Controllers\CategoryController::class, 'index']);
+Route::get('categories/{id}', [App\Http\Controllers\CategoryController::class, 'show']);
+Route::post('categories', [App\Http\Controllers\CategoryController::class, 'store']);
+Route::put('categories/{id}', [App\Http\Controllers\CategoryController::class, 'update']);
+Route::delete('categories/{id}', [App\Http\Controllers\CategoryController::class, 'delete']);
